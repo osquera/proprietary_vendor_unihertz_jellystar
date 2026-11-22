@@ -1,0 +1,9 @@
+service agui_smartpa_calbria /vendor/bin/AguiFrsmClibra
+    class late_start
+    user root
+    group system
+    disabled
+    oneshot
+
+on property:persist.vendor.smartpa_frsm_app=start
+  start agui_smartpa_calbria

@@ -1,0 +1,5 @@
+service aguiledbelt /vendor/bin/hw/vendor.mediatek.hardware.aguiledbelt@V1-service
+    class hal
+    interface aidl vendor.mediatek.hardware.aguiledbelt.IAguiLedBeltLight/default 
+    user system
+    group system

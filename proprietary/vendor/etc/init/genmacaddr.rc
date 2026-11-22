@@ -1,0 +1,14 @@
+
+# [AGOLD][spl][20120420] AGOLD_PROX_CALI_ENABLE
+
+service agui_generate_addr /vendor/bin/AguiGenAddrToNvram
+    class late_start
+    user root
+    group system
+    disabled
+    oneshot
+
+on property:vendor.service.nvram_daemon=stopped
+   start agui_generate_addr
+
+#[AGOLD][end]

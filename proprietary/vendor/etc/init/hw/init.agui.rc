@@ -1,0 +1,272 @@
+
+# [Fengjun][2025.03.26]For add 'apd' partition
+on charger
+    mkdir /mnt/apd 0775  root system
+    mount ext4 /dev/block/by-name/apd /mnt/apd rw wait
+    mkdir /mnt/apd/FLIR 0775  root system
+    chown root system /mnt/apd
+    chmod 0775 /mnt/apd
+    restorecon_recursive /mnt/apd
+
+# [End]       
+
+on post-fs-data
+	# [agold][hemanjin] add for infrared light
+    chmod 0666 /dev/ir_lightdev
+    chown system /dev/ir_lightdev
+
+    # [AGUI][Fengjun][2022.08.29]Campling lamp
+    chmod 0666 /dev/camping_lightdev
+    chown system /dev/camping_lightdev 
+	chmod 0666 /sys/bus/platform/drivers/camping_lightdev/camping_light_mode
+    chown system  /sys/bus/platform/drivers/camping_lightdev/camping_light_mode 
+	chmod 0666 /sys/bus/platform/drivers/camping_lightdev/camping_light_duty
+    chown system  /sys/bus/platform/drivers/camping_lightdev/camping_light_duty       
+    chmod 0666 /dev/camping_light_v2dev
+    chown system /dev/camping_light_v2dev 
+	chmod 0666 /sys/bus/platform/drivers/camping_light_v2dev/camping_light_mode
+    chown system  /sys/bus/platform/drivers/camping_light_v2dev/camping_light_mode  
+	chmod 0666 /sys/bus/platform/drivers/camping_lightdev/camping_light_duty
+    chown system  /sys/bus/platform/drivers/camping_lightdev/camping_light_duty        
+    # [AGUI]End
+
+    # [AGOLD][zhangyongjiang] add for two color light in k510.
+    chmod 0666 /sys/devices/virtual/flashlight_core/flashlight/flashlight_torch
+    chown system /sys/devices/virtual/flashlight_core/flashlight/flashlight_torch
+
+    # [AGOLD][chenwei][20221028][start] for Aging test
+    chmod 0666 /sys/charger_sys/charger_sys
+    chown system  /sys/charger_sys/charger_sys
+    # [AGOLD]End
+    
+    # [Fengjun][2025.03.26]For add 'apd' partition
+    mkdir /mnt/apd/FLIR 0775  root system
+    chown root system /mnt/apd
+    chmod 0775 /mnt/apd
+    chown root system /mnt/apd/FLIR
+    chmod 0775 /mnt/apd/FLIR
+    restorecon_recursive /mnt/apd
+    # [End]
+
+	# [AGOLD][huyl][20221017][start] red blue leds,
+    chmod 0666 /dev/redblue_leddev
+    chown system /dev/redblue_leddev 
+    # [AGOLD]End
+    
+	# [AGOLD][Fengjun][20240810][start] nds03_laser,Used for projection focusing
+	chmod 0666 /dev/nds01
+    chown system /dev/nds01
+    chmod 0666 /dev/nds03
+    chown system /dev/nds03 
+    chmod 0666 /sys/nds03_ctrl/nds03_onoff
+    chown system  /sys/nds03_ctrl/nds03_onoff
+    chmod 0666 /sys/nds03_ctrl/nds03_read
+    chown system  /sys/nds03_ctrl/nds03_read
+    chmod 0666 /sys/nds03_ctrl/nds03_fast_read
+    chown system  /sys/nds03_ctrl/nds03_fast_read
+    chmod 0666 /sys/nds03_ctrl/nds03_crosstalk_cali
+    chown system  /sys/nds03_ctrl/nds03_crosstalk_cali
+    chmod 0666 /sys/nds03_ctrl/nds03_offset_cali
+    chown system  /sys/nds03_ctrl/nds03_offset_cali    
+    chmod 0666 /sys/nds03_ctrl/nds03_is_cali
+    chown system  /sys/nds03_ctrl/nds03_is_cali        
+    # [AGOLD]End   
+
+    # [AGUI][Fengjun][2023.04.11]For AW smartpa
+    mkdir /mnt/vendor/persist/factory 0775  root system
+    mkdir /mnt/vendor/persist/factory/audio 0775  root system
+    chmod 0666 /mnt/vendor/persist/factory/audio/aw_cali.bin
+    chown root system /mnt/vendor/persist/factory/audio/aw_cali.bin
+    chmod 0666 /sys/class/smartpa/re25_calib
+    chown root system /sys/class/smartpa/re25_calib 
+    chmod 0666 /sys/class/frsm_amp/calre
+    chown root system /sys/class/frsm_amp/calre
+    chmod 0666 /sys/class/frsm_amp/ndev
+    chown root system /sys/class/frsm_amp/ndev
+    chmod 0666 /dev/snd/controlC0
+    chown root audio /dev/snd/controlC0
+
+    # [AGold zhengzhibin 2023.04.03] projector
+    chmod 0666 /dev/projector
+    chown system /dev/projector
+    chmod 0666 /dev/ttyS2
+    chown system /dev/ttyS2  
+    chmod 0666 /sys/motherboard_number/uart_en
+    chown system  /sys/motherboard_number/uart_en  
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_swi
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_swi  
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_err
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_err 
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_rdma_abnormal_cnt
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_rdma_abnormal_cnt 
+
+    # [AGUI][Fengjun][2024.01.08]For A91 projector
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_mode
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_mode
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_rgb_current
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_rgb_current
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_pitch_setting
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_pitch_setting
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_fan_en
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_fan_en
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_name
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_name
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_temp
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_temp
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_log
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_log
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/motor_turn_mode_step
+    chown system  /sys/bus/spi/drivers/fpga_spi/motor_turn_mode_step
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/focus_auto_calibration
+    chown system  /sys/bus/spi/drivers/fpga_spi/focus_auto_calibration  
+    
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/dlpc3421_awb_cali
+    chown system  /sys/bus/spi/drivers/fpga_spi/dlpc3421_awb_cali
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/fpga_h3_scan_mode
+    chown system  /sys/bus/spi/drivers/fpga_spi/fpga_h3_scan_mode  
+    
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/fpga_h3_scan_hori
+    chown system  /sys/bus/spi/drivers/fpga_spi/fpga_h3_scan_hori
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/fpga_h3_scan_vert
+    chown system  /sys/bus/spi/drivers/fpga_spi/fpga_h3_scan_vert
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/motor_adc
+    chown system  /sys/bus/spi/drivers/fpga_spi/motor_adc
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/fpga_h3_screen_rotation
+    chown system  /sys/bus/spi/drivers/fpga_spi/fpga_h3_screen_rotation  
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/led_set
+    chown system  /sys/bus/spi/drivers/fpga_spi/led_set    
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/motor_turn_mode_step_work
+    chown system  /sys/bus/spi/drivers/fpga_spi/motor_turn_mode_step_work
+
+    # [AGUI][Fengjun][2026.01.07]sony projector
+    # 光轴校准
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_optical_contral
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_optical_contral
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_optical_step_plus
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_optical_step_plus
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_optical_step_minus
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_optical_step_minus
+    # 相位校准
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_biphase_contral
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_biphase_contral
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_biphase_step_plus
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_biphase_step_plus
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_biphase_step_minus
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_biphase_step_minus
+    # 相位、光轴切换
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_reset
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_reset    
+    # 垂直梯形矫正
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_pitch_v
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_pitch_v
+    # 水平梯形矫正
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_pitch_h
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_pitch_h
+    # 对比度
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_contrast
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_contrast
+    # 色调
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_hue
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_hue
+    # 饱和度
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_saturation
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_saturation
+    # 锐度
+    chmod 0666 /sys/bus/spi/drivers/fpga_spi/projector_sharpness
+    chown system  /sys/bus/spi/drivers/fpga_spi/projector_sharpness
+    # [AGUI]End    
+
+    # [Fengjun][2025.03.31]外接显示状态文件
+    chmod 0666 /proc/agold_displayport_state
+    chown root system /proc/agold_displayport_state
+    
+    # [Fengjun][2026.01.26]投影外接信号源切换
+    chmod 0666 /sys/bus/i2c/drivers/LT7911D_i2c/ext_dp_sel
+    chown root system /sys/bus/i2c/drivers/LT7911D_i2c/ext_dp_sel
+    
+    # [Fengjun][2025.04.02]红外相机
+    chmod 0666 /dev/lepton
+    chown system /dev/lepton
+    chmod 0666 /dev/lepton_drv
+    chown system /dev/lepton_drv 
+    
+    #[Fengjun][2025.03.05]For keyboard light
+    chmod 0666 /sys/devices/platform/keypad_led/keyled_brightness
+    chown system  /sys/devices/platform/keypad_led/keyled_brightness
+    #[Fengjun][2025.03.05]For touchpad
+    chmod 0666 /sys/devices/platform/soc/11c22000.i2c/i2c-2/2-0020/update_firmware
+    chown system  /sys/devices/platform/soc/11c22000.i2c/i2c-2/2-0020/update_firmware  
+    
+    chmod 0666 /sys/bus/platform/drivers/agold_modem_detect/agold_modem_detect_mode
+    chown root system  /sys/bus/platform/drivers/agold_modem_detect/agold_modem_detect_mode  
+    
+    # new touchpad
+    chmod 0666 /sys/devices/platform/soc/11c22000.i2c/i2c-2/2-005a/hynswitchesd
+    chown root system  /sys/devices/platform/soc/11c22000.i2c/i2c-2/2-005a/hynswitchesd
+    chmod 0666 /sys/devices/platform/soc/11c22000.i2c/i2c-2/2-005a/hynonoff
+    chown root system  /sys/devices/platform/soc/11c22000.i2c/i2c-2/2-005a/hynonoff
+    chmod 0666 /sys/devices/platform/soc/11c22000.i2c/i2c-2/2-005b/kb_touch_fwupdate
+    chown root system  /sys/devices/platform/soc/11c22000.i2c/i2c-2/2-005b/kb_touch_fwupdate
+    
+    # [Fengjun][2026.02.02]Touchpad 双击唤醒屏幕
+    chmod 0666 /dev/touch_pad_gesture
+    chown system /dev/touch_pad_gesture
+    
+    # [Fengjun][2025.09.15]电池 reset 修改文件权限
+    chmod 0666 /sys/sh366003_ctrl/sh366003_reset
+    chown root system  /sys/sh366003_ctrl/sh366003_reset  
+    #[wangwanghua][2025.12.19]电池AFI升级 修改文件权限 
+    chmod 0666 /sys/devices/platform/soc/11d71000.i2c/i2c-11/11-0055/charge_afi_updata
+    chown root system  /sys/devices/platform/soc/11d71000.i2c/i2c-11/11-0055/charge_afi_updata    
+    #[wangwanghua][2025.12.19]电池下0021指令 修改文件权限 
+    chmod 0666 /sys/devices/platform/soc/11d71000.i2c/i2c-11/11-0055/charge_soc_enable
+    chown root system  /sys/devices/platform/soc/11d71000.i2c/i2c-11/11-0055/charge_soc_enable   
+    #[Fengjun][2026.02.04]电池健康 
+    chmod 0666 /sys/devices/platform/soc/11d71000.i2c/i2c-11/11-0055/charge_soh_data
+    chown root system  /sys/devices/platform/soc/11d71000.i2c/i2c-11/11-0055/charge_soh_data   
+    #[Fengjun][2026.02.04]电池限流 
+    chmod 0666 /proc/driver/agold_set_current_info 
+    chown root system  /proc/driver/agold_set_current_info  
+    #[Fengjun][2026.05.07]测试模式关闭亮屏限制快充功能
+    chmod 0666 /sys/kernel/thermal/charger_88_test_flag 
+    chown root system  /sys/kernel/thermal/charger_88_test_flag
+    
+    #[Fengjun][2026.03.04]ALT键点亮屏幕
+    chmod 0666 /sys/devices/platform/soc/11e01000.i2c/i2c-6/6-0058/wake_up_enable
+    chown root system  /sys/devices/platform/soc/11e01000.i2c/i2c-6/6-0058/wake_up_enable  
+    
+    # [Fengjun][2026.03.09]HALL 开关状态文件
+    chmod 0666 /sys/class/agold_hall/agoldhall/state
+    chown root system  /sys/class/agold_hall/agoldhall/state     
+
+    # [agui][linyuan] eSIM
+    chmod 0666 /sys/bus/platform/devices/sim2-switch/sim2_select
+    chown root system /sys/bus/platform/devices/sim2-switch/sim2_select
+
+    # for lampbelt leds,
+    chmod 0666 /dev/lampbelt_leds
+    chown system /dev/lampbelt_leds
+
+    # agold add for custom watermark.
+    mkdir /data/vendor/watermark
+    chown root system /data/vendor/watermark
+    chmod 0771 /data/vendor/watermark
+    
+    # [Maojie][2026.05.19] agold chmod for lirc0 红外遥控
+    chmod 0660 /dev/lirc0
+    chown root system /dev/lirc0
+    
+    # [Fengjun][2026.05.29]For A58 led
+    chmod 0666 /sys/devices/platform/soc/11f00000.i2c/i2c-7/7-0045/leds/red/blink
+    chown root system  /sys/devices/platform/soc/11f00000.i2c/i2c-7/7-0045/leds/red/blink
+    chmod 0666 /sys/devices/platform/soc/11f00000.i2c/i2c-7/7-0045/leds/green/blink
+    chown root system  /sys/devices/platform/soc/11f00000.i2c/i2c-7/7-0045/leds/green/blink
+    chmod 0666 /sys/devices/platform/soc/11f00000.i2c/i2c-7/7-0045/leds/blue/blink
+    chown root system  /sys/devices/platform/soc/11f00000.i2c/i2c-7/7-0045/leds/blue/blink
+    chmod 0666 /sys/devices/platform/soc/11f00000.i2c/i2c-7/7-0045/leds/green/agold_blink
+    chown root system  /sys/devices/platform/soc/11f00000.i2c/i2c-7/7-0045/leds/green/agold_blink
+    
+    # [Fengjun][2026.06.04]用于区分 A58 距离传感器
+    chmod 0666 /proc/agold_alsps_info
+    chown root system /proc/agold_alsps_info   
+    

@@ -1,0 +1,5 @@
+service agolddaemon /vendor/bin/hw/vendor.mediatek.hardware.agolddaemon@V1-service
+    class hal
+    interface aidl vendor.mediatek.hardware.agolddaemon.IAgoldDaemon/default
+    user system
+    group system

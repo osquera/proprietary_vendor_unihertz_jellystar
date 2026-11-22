@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sunwave:Config xmlns:sunwave="http://www.sunwavecorp.com/some-location" Environment="TEE" platform="项目信息: test">
+
+    <feature>
+        <key_emulation cname="按键功能开关" default="false" desc="默认：false" format="boolean" useable="true">true</key_emulation>
+		<esd_mode cname="ESD 保护模式" default="1" desc="ESD 保护模式。默认：触发式(1)" format="array" options="关闭 ESD 保护(0)|触发式(1)|轮询式(2)|触发式和轮询式并用(3)" useable="true" values="0|1|2|3">2</esd_mode>
+    </feature>
+    
+    <customer>
+       <auth_check_finger cname="比对前检测手指" default="true" desc="比对前检测手指开关。默认：true" format="boolean" useable="true">false</auth_check_finger>
+    </customer>
+
+    <diagnosis>
+        <log_level>1</log_level>
+    </diagnosis>
+
+</sunwave:Config>

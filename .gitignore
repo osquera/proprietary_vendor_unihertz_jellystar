@@ -1,0 +1,3 @@
+# Not used by the build (vendor and vendor_dlkm are built); kept locally only
+/images/vendor.img
+/images/vendor_dlkm.img

@@ -1,0 +1,43 @@
+This SW Support Peripherals Lists As Follow :;
+Gsensor Lists :;
+sh3001;
+bmi2xy;
+sh5001;
+
+Msensor Lists :;
+st480;
+qmc6308;
+
+Gyrsensor Lists :;
+sh3001;
+bmi2xy;
+
+ALS/PS Lists :;
+ucs146e1;
+stk3abx;
+
+Lcd Lists :;
+ST7701S_Z30043;
+
+TouchPanel Lists :;
+chsc5xxx;
+
+Carmera Lists :;
+s5kgm2_mipi_raw;
+s5kgm2gms_mipi_raw;
+imx219_mipi_raw;
+imx219gms_mipi_raw;
+
+Memory Lists :;
+H9HQ15AFAMBDAR;
+KM8V9001JM_B813;
+KM8F9001JM_B813;
+MT29VZZZCD9FQKPR_046W_G9L;
+KM2L9001CM_B518;
+KM8F8001JM_B813;
+KM8F9001JM_B813;
+SMVUM181ZZCDA1SKPR-UT;
+H9QT1G6DN6X132;
+H9HQ21AFAMADAR_KEM;
+KM8B8001JM_BC01;
+HN8T15DEHKX045;

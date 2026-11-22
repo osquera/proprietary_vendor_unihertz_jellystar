@@ -1,0 +1,17 @@
+#!/system/bin/sh
+# [Fengjun][2026.06.12] 仅供 adb 手动调试；正常流程由 agui_copy_log_file.rc 的 exec 链触发
+
+STAGING=/data/vendor/agui_debuglogger
+DEST=/data/media/0/debuglogger
+
+log -t AguiCopyLogFile "manual script start"
+
+/vendor/bin/AguiCopyLogFileVendor || log -t AguiCopyLogFile "vendor binary failed: $?"
+/system_ext/bin/AguiCopyLogFile || log -t AguiCopyLogFile "core binary failed: $?"
+mkdir -p "$DEST/t6"
+cp -f "$STAGING/t6/tkcore.log" "$DEST/t6/tkcore.log" 2>/dev/null || \
+    log -t AguiCopyLogFile "cp tkcore failed: $?"
+ln -sfn "$STAGING/aee_exp" "$DEST/aee_exp_vendor" 2>/dev/null || \
+    log -t AguiCopyLogFile "symlink aee_exp_vendor failed: $?"
+
+log -t AguiCopyLogFile "manual script done"
