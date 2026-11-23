@@ -98,7 +98,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.common-V2-ndk",
                 "android.hardware.common.fmq-V1-ndk",
                 "android.hardware.bluetooth.audio-impl-mediatek",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk-mtk",
                 "libbluetooth_audio_session_aidl_mtk",
                 "libstagefright_foundation",
                 "liblog",
@@ -134,7 +134,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.common-V2-ndk",
                 "android.hardware.common.fmq-V1-ndk",
                 "android.hardware.bluetooth.audio-impl-mediatek",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk-mtk",
                 "libbluetooth_audio_session_aidl_mtk",
                 "libstagefright_foundation",
                 "liblog",
@@ -534,7 +534,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libhardware",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk-mtk",
                 "liblog",
                 "libc++",
                 "libc",
@@ -553,7 +553,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libhardware",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk-mtk",
                 "liblog",
                 "libc++",
                 "libc",
@@ -3032,6 +3032,55 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libasn1c_core",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudio_aidl_conversion_common_ndk-mtk",
+    owner: "unihertz",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libaudio_aidl_conversion_common_ndk-mtk.so",
+            ],
+            shared_libs: [
+                "android.media.audio.common.types-V4-ndk",
+                "android.hardware.audio.common-V4-ndk",
+                "liblog",
+                "libstagefright_foundation",
+                "libutils",
+                "libbase",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libaudio_aidl_conversion_common_ndk-mtk.so",
+            ],
+            shared_libs: [
+                "android.media.audio.common.types-V4-ndk",
+                "android.hardware.audio.common-V4-ndk",
+                "liblog",
+                "libstagefright_foundation",
+                "libutils",
+                "libbase",
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -17677,7 +17726,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk-mtk",
                 "libaudioaidlcommon",
                 "libaudioutils-mtk",
                 "libbase",
@@ -17701,7 +17750,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk-mtk",
                 "libaudioaidlcommon",
                 "libaudioutils-mtk",
                 "libbase",
@@ -17739,7 +17788,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk-mtk",
                 "libaudioaidlcommon",
                 "libaudioutils-mtk",
                 "libbase",
@@ -17763,7 +17812,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk-mtk",
                 "libaudioaidlcommon",
                 "libaudioutils-mtk",
                 "libbase",
@@ -17801,7 +17850,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk-mtk",
                 "libaudioaidlcommon",
                 "libaudioutils-mtk",
                 "libbase",
@@ -17825,7 +17874,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk-mtk",
                 "libaudioaidlcommon",
                 "libaudioutils-mtk",
                 "libbase",
@@ -17863,7 +17912,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk-mtk",
                 "libaudioaidlcommon",
                 "libaudioutils-mtk",
                 "libbase",
@@ -17887,7 +17936,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk-mtk",
                 "libaudioaidlcommon",
                 "libaudioutils-mtk",
                 "libbase",
@@ -17925,7 +17974,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk-mtk",
                 "libaudioaidlcommon",
                 "libbase",
                 "libbinder_ndk",
@@ -17949,7 +17998,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk-mtk",
                 "libaudioaidlcommon",
                 "libbase",
                 "libbinder_ndk",
@@ -18029,7 +18078,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk-mtk",
                 "libaudioaidlcommon",
                 "libaudioutils-mtk",
                 "libbase",
@@ -18053,7 +18102,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk-mtk",
                 "libaudioaidlcommon",
                 "libaudioutils-mtk",
                 "libbase",
@@ -20027,7 +20076,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk-mtk",
                 "libaudioaidlcommon",
                 "libaudioutils-mtk",
                 "libbase",
@@ -31767,7 +31816,7 @@ cc_prebuilt_binary {
                 "android.hardware.common-V2-ndk",
                 "android.hardware.common.fmq-V1-ndk",
                 "android.hardware.audio.core-impl-mediatek",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk-mtk",
                 "libbluetooth_audio_session_aidl_mtk",
                 "libmedia_helper",
                 "libstagefright_foundation",
