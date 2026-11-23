@@ -1063,7 +1063,7 @@ PRODUCT_PACKAGES += \
     libmmagent \
     libmml \
     libmmlpqImpl \
-    libmnl \
+    libmnl_mtk \
     libmtk_drvb \
     libmtk_mali_user \
     libmtkcam_debugutils \
@@ -1116,7 +1116,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mmlpq-V5-ndk \
     vendor.mediatek.hardware.mms-V1-ndk \
-    vendor.mediatek.hardware.mtkpower-V2-ndk \
     vendor.mediatek.hardware.mtkpower-V3-ndk \
     vendor.mediatek.hardware.mtkpower_applist-V3-ndk \
     vendor.mediatek.hardware.netdagent-V1-ndk \
@@ -1418,7 +1417,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
     vendor.mediatek.hardware.mtklight-V1-ndk \
-    vendor.mediatek.hardware.mtkpower-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V4-ndk \
     vendor.mediatek.hardware.mtkradioex.atci-V1-ndk \
