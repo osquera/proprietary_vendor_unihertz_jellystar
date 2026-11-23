@@ -4969,7 +4969,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.media.c2-V1-ndk",
                 "libbinder_ndk",
                 "libcodec2_aidl",
-                "libformatter",
+                "libformatter_mtk",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "android.hardware.media.bufferpool2-V2-ndk",
@@ -5018,7 +5018,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.media.c2-V1-ndk",
                 "libbinder_ndk",
                 "libcodec2_aidl",
-                "libformatter",
+                "libformatter_mtk",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "android.hardware.media.bufferpool2-V2-ndk",
@@ -5080,7 +5080,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.media.c2-V1-ndk",
                 "libbinder_ndk",
                 "libcodec2_aidl",
-                "libformatter",
+                "libformatter_mtk",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "android.hardware.media.bufferpool2-V2-ndk",
@@ -5128,7 +5128,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.media.c2-V1-ndk",
                 "libbinder_ndk",
                 "libcodec2_aidl",
-                "libformatter",
+                "libformatter_mtk",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "android.hardware.media.bufferpool2-V2-ndk",
@@ -6021,7 +6021,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libformatter",
+    name: "libformatter_mtk",
+    stem: "libformatter",
     owner: "unihertz",
     strip: {
         none: true,

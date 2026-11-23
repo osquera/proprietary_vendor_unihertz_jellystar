@@ -805,7 +805,7 @@ PRODUCT_PACKAGES += \
     libexpat-mtk \
     libfgauge_gm30 \
     libfile_op \
-    libformatter \
+    libformatter_mtk \
     libfrsm_extamp_intf \
     libged \
     libgpu_aux \
