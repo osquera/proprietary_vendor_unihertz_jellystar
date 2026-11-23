@@ -194,7 +194,6 @@ PRODUCT_COPY_FILES += \
     vendor/unihertz/jellystar/proprietary/vendor/etc/ecc_list_OP18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP18.xml \
     vendor/unihertz/jellystar/proprietary/vendor/etc/ecc_list_OP236.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP236.xml \
     vendor/unihertz/jellystar/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
-    vendor/unihertz/jellystar/proprietary/vendor/etc/factory.ini:$(TARGET_COPY_OUT_VENDOR)/etc/factory.ini \
     vendor/unihertz/jellystar/proprietary/vendor/etc/fstab.emmc:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.emmc \
     vendor/unihertz/jellystar/proprietary/vendor/etc/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap \
     vendor/unihertz/jellystar/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
@@ -249,10 +248,6 @@ PRODUCT_COPY_FILES += \
     vendor/unihertz/jellystar/proprietary/vendor/etc/init/genmacaddr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/genmacaddr.rc \
     vendor/unihertz/jellystar/proprietary/vendor/etc/init/gpuserv-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gpuserv-default.rc \
     vendor/unihertz/jellystar/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
-    vendor/unihertz/jellystar/proprietary/vendor/etc/init/hw/factory_init.connectivity.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/factory_init.connectivity.common.rc \
-    vendor/unihertz/jellystar/proprietary/vendor/etc/init/hw/factory_init.connectivity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/factory_init.connectivity.rc \
-    vendor/unihertz/jellystar/proprietary/vendor/etc/init/hw/factory_init.project.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/factory_init.project.rc \
-    vendor/unihertz/jellystar/proprietary/vendor/etc/init/hw/factory_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/factory_init.rc \
     vendor/unihertz/jellystar/proprietary/vendor/etc/init/hw/init.agui.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.agui.rc \
     vendor/unihertz/jellystar/proprietary/vendor/etc/init/hw/init.mt6789.usb-stock.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mt6789.usb-stock.rc \
     vendor/unihertz/jellystar/proprietary/vendor/etc/init/hw/multi_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/multi_init.rc \
@@ -1524,7 +1519,6 @@ PRODUCT_PACKAGES += \
     eara_io_service \
     em_hidl \
     epdg_wod \
-    factory \
     fpsgo \
     frs \
     frs_intf \
