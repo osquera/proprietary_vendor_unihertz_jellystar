@@ -1101,9 +1101,9 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apmonitor@2.0 \
     vendor.mediatek.hardware.apuware.utils@2.0 \
     vendor.mediatek.hardware.audio@6.1 \
-    vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
+    vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendor \
+    vendor.mediatek.hardware.bluetooth.audio@2.1_vendor \
+    vendor.mediatek.hardware.bluetooth.audio@2.2_vendor \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.1 \
     vendor.mediatek.hardware.composer_ext-V1-ndk \
@@ -1116,10 +1116,11 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mmlpq-V5-ndk \
     vendor.mediatek.hardware.mms-V1-ndk \
+    vendor.mediatek.hardware.mtkpower-V2-ndk_vendor \
     vendor.mediatek.hardware.mtkpower-V3-ndk \
     vendor.mediatek.hardware.mtkpower_applist-V3-ndk \
     vendor.mediatek.hardware.netdagent-V1-ndk \
-    vendor.mediatek.hardware.netdagent@1.0 \
+    vendor.mediatek.hardware.netdagent@1.0_vendor \
     vendor.mediatek.hardware.neuropilot.agent-V1-ndk \
     vendor.mediatek.hardware.neuropilot.agent@1.0 \
     vendor.mediatek.hardware.neuropilot.agent@1.1 \
@@ -1411,12 +1412,13 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.gnss-V3-ndk \
     vendor.mediatek.hardware.gnss.batching-V1-ndk \
     vendor.mediatek.hardware.lbs-V1-ndk \
-    vendor.mediatek.hardware.lbs@1.0 \
+    vendor.mediatek.hardware.lbs@1.0_vendor \
     vendor.mediatek.hardware.log-V1-ndk \
     vendor.mediatek.hardware.mbrain-V6-ndk \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
     vendor.mediatek.hardware.mtklight-V1-ndk \
+    vendor.mediatek.hardware.mtkpower-V1-ndk_vendor \
     vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V4-ndk \
     vendor.mediatek.hardware.mtkradioex.atci-V1-ndk \

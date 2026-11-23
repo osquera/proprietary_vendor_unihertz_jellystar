@@ -172,9 +172,9 @@ cc_prebuilt_library_shared {
                 "libfmq",
                 "liblog",
                 "libbluetooth_audio_session_aidl_mtk",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendor",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1_vendor",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -193,9 +193,9 @@ cc_prebuilt_library_shared {
                 "libfmq",
                 "liblog",
                 "libbluetooth_audio_session_aidl_mtk",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendor",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1_vendor",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -604,7 +604,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendor",
                 "android.hardware.bluetooth.audio-V5-ndk",
                 "android.hardware.audio.common@5.0",
                 "libtinycompress",
@@ -645,7 +645,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendor",
                 "android.hardware.bluetooth.audio-V5-ndk",
                 "android.hardware.audio.common@5.0",
                 "libtinycompress",
@@ -1535,8 +1535,8 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.bluetooth.audio-V5-ndk",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1_vendor",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendor",
                 "libbase",
                 "libbluetooth_audio_session_mediatek",
                 "libcutils",
@@ -1561,8 +1561,8 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.bluetooth.audio-V5-ndk",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1_vendor",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendor",
                 "libbase",
                 "libbluetooth_audio_session_mediatek",
                 "libcutils",
@@ -1601,9 +1601,9 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.bluetooth.audio-V5-ndk",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1_vendor",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2_vendor",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendor",
                 "libbase",
                 "libbluetooth_audio_session_mediatek",
                 "libcutils",
@@ -1628,9 +1628,9 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.bluetooth.audio-V5-ndk",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1_vendor",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2_vendor",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendor",
                 "libbase",
                 "libbluetooth_audio_session_mediatek",
                 "libcutils",
@@ -3826,7 +3826,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libfmq",
                 "liblog",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendor",
                 "libhidlbase",
                 "libxml2",
                 "libflatbuffers-cpp",
@@ -3851,7 +3851,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libfmq",
                 "liblog",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendor",
                 "libhidlbase",
                 "libxml2",
                 "libflatbuffers-cpp",
@@ -3889,7 +3889,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libfmq",
                 "liblog",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendor",
                 "libhidlbase",
                 "libxml2",
                 "libflatbuffers-cpp",
@@ -3914,7 +3914,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libfmq",
                 "liblog",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendor",
                 "libhidlbase",
                 "libxml2",
                 "libflatbuffers-cpp",
@@ -3952,7 +3952,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libfmq",
                 "liblog",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendor",
                 "libhidlbase",
                 "libxml2",
                 "libflatbuffers-cpp",
@@ -3977,7 +3977,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libfmq",
                 "liblog",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendor",
                 "libhidlbase",
                 "libxml2",
                 "libflatbuffers-cpp",
@@ -4141,8 +4141,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libbluetooth_audio_session_mediatek.so",
             ],
             shared_libs: [
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1_vendor",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2_vendor",
                 "libbase",
                 "libcutils",
                 "libfmq",
@@ -4160,8 +4160,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so",
             ],
             shared_libs: [
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1_vendor",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2_vendor",
                 "libbase",
                 "libcutils",
                 "libfmq",
@@ -7521,7 +7521,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libcutils",
                 "libc",
-                "vendor.mediatek.hardware.mtkpower-V2-ndk",
+                "vendor.mediatek.hardware.mtkpower-V2-ndk_vendor",
                 "vendor.mediatek.hardware.mtkpower@1.0",
                 "vendor.mediatek.hardware.mtkpower@1.1",
                 "vendor.mediatek.hardware.mtkpower@1.2",
@@ -7543,7 +7543,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libcutils",
                 "libc",
-                "vendor.mediatek.hardware.mtkpower-V2-ndk",
+                "vendor.mediatek.hardware.mtkpower-V2-ndk_vendor",
                 "vendor.mediatek.hardware.mtkpower@1.0",
                 "vendor.mediatek.hardware.mtkpower@1.1",
                 "vendor.mediatek.hardware.mtkpower@1.2",
@@ -10075,10 +10075,10 @@ cc_prebuilt_library_shared {
                 "libtinyxml2-mtk",
                 "libhidlbase",
                 "libhardware",
-                "vendor.mediatek.hardware.netdagent@1.0",
+                "vendor.mediatek.hardware.netdagent@1.0_vendor",
                 "vendor.mediatek.hardware.netdagent-V1-ndk",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1_vendor",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2_vendor",
                 "vendor.mediatek.hardware.mtkpower@1.0",
                 "vendor.mediatek.hardware.mtkpower@1.1",
                 "vendor.mediatek.hardware.mtkpower@1.2",
@@ -10110,10 +10110,10 @@ cc_prebuilt_library_shared {
                 "libtinyxml2-mtk",
                 "libhidlbase",
                 "libhardware",
-                "vendor.mediatek.hardware.netdagent@1.0",
+                "vendor.mediatek.hardware.netdagent@1.0_vendor",
                 "vendor.mediatek.hardware.netdagent-V1-ndk",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1_vendor",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2_vendor",
                 "vendor.mediatek.hardware.mtkpower@1.0",
                 "vendor.mediatek.hardware.mtkpower@1.1",
                 "vendor.mediatek.hardware.mtkpower@1.2",
@@ -18453,7 +18453,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+    name: "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendor",
+    stem: "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
     owner: "unihertz",
     strip: {
         none: true,
@@ -18496,7 +18497,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio@2.1",
+    name: "vendor.mediatek.hardware.bluetooth.audio@2.1_vendor",
+    stem: "vendor.mediatek.hardware.bluetooth.audio@2.1",
     owner: "unihertz",
     strip: {
         none: true,
@@ -18543,7 +18545,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio@2.2",
+    name: "vendor.mediatek.hardware.bluetooth.audio@2.2_vendor",
+    stem: "vendor.mediatek.hardware.bluetooth.audio@2.2",
     owner: "unihertz",
     strip: {
         none: true,
@@ -18555,7 +18558,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.audio.common@5.0",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1_vendor",
                 "android.hidl.safe_union@1.0",
                 "libhidlbase",
                 "liblog",
@@ -18573,7 +18576,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.audio.common@5.0",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1_vendor",
                 "android.hidl.safe_union@1.0",
                 "libhidlbase",
                 "liblog",
@@ -19072,6 +19075,44 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkpower-V2-ndk_vendor",
+    stem: "vendor.mediatek.hardware.mtkpower-V2-ndk",
+    owner: "unihertz",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.mediatek.hardware.mtkpower-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.mtkpower-V3-ndk",
     owner: "unihertz",
     strip: {
@@ -19183,7 +19224,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.netdagent@1.0",
+    name: "vendor.mediatek.hardware.netdagent@1.0_vendor",
+    stem: "vendor.mediatek.hardware.netdagent@1.0",
     owner: "unihertz",
     strip: {
         none: true,
@@ -19957,7 +19999,7 @@ cc_prebuilt_library_shared {
                 "vendor.mediatek.hardware.mtkpower@1.0",
                 "vendor.mediatek.hardware.mtkpower@1.1",
                 "vendor.mediatek.hardware.mtkpower@1.2",
-                "vendor.mediatek.hardware.mtkpower-V2-ndk",
+                "vendor.mediatek.hardware.mtkpower-V2-ndk_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -20570,7 +20612,7 @@ cc_prebuilt_library_shared {
                 "libgralloc_extra",
                 "libgralloctypes",
                 "libsync",
-                "vendor.mediatek.hardware.mtkpower-V1-ndk",
+                "vendor.mediatek.hardware.mtkpower-V1-ndk_vendor",
                 "vendor.mediatek.hardware.mtkpower@1.0",
                 "vendor.mediatek.hardware.mtkpower@1.1",
                 "vendor.mediatek.hardware.mtkpower@1.2",
@@ -21430,7 +21472,7 @@ cc_prebuilt_library_shared {
                 "libmtkrillog",
                 "libmtkconfigutils",
                 "libmtktinyxml",
-                "vendor.mediatek.hardware.netdagent@1.0",
+                "vendor.mediatek.hardware.netdagent@1.0_vendor",
                 "libhidlbase",
                 "vendor.mediatek.hardware.netdagent-V1-ndk",
                 "libbinder_ndk",
@@ -21643,7 +21685,7 @@ cc_prebuilt_library_shared {
                 "libmtkrillog",
                 "libmtkconfigutils",
                 "libmtktinyxml",
-                "vendor.mediatek.hardware.netdagent@1.0",
+                "vendor.mediatek.hardware.netdagent@1.0_vendor",
                 "libhidlbase",
                 "vendor.mediatek.hardware.netdagent-V1-ndk",
                 "libbinder_ndk",
@@ -23932,7 +23974,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "android.hardware.power@1.0",
                 "vendor.mediatek.hardware.power@2.0",
-                "vendor.mediatek.hardware.mtkpower-V1-ndk",
+                "vendor.mediatek.hardware.mtkpower-V1-ndk_vendor",
                 "libcamalgo.nr",
                 "libmtkcam_mapping_mgr",
                 "libaedv",
@@ -29051,7 +29093,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.lbs@1.0",
+    name: "vendor.mediatek.hardware.lbs@1.0_vendor",
+    stem: "vendor.mediatek.hardware.lbs@1.0",
     owner: "unihertz",
     strip: {
         none: true,
@@ -29195,6 +29238,32 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/vendor.mediatek.hardware.mtklight-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkpower-V1-ndk_vendor",
+    stem: "vendor.mediatek.hardware.mtkpower-V1-ndk",
+    owner: "unihertz",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -31479,7 +31548,7 @@ cc_prebuilt_binary {
                 "libaudiotoolkit_vendor",
                 "libmedia_helper",
                 "libladder",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1_vendor",
                 "libhfmanagerwrapper",
                 "liblog",
                 "libutils",
@@ -33441,7 +33510,7 @@ cc_prebuilt_binary {
                 "libbinder",
                 "libhidlbase",
                 "libhidltransport",
-                "vendor.mediatek.hardware.lbs@1.0",
+                "vendor.mediatek.hardware.lbs@1.0_vendor",
                 "vendor.mediatek.hardware.nvram-V1-ndk",
                 "libbinder_ndk",
                 "libkmsetkey",
