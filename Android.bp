@@ -29271,31 +29271,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtklight-V1-ndk",
-    owner: "unihertz",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtklight-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.mtkpower-V1-ndk-mtk",
     owner: "unihertz",
     strip: {
@@ -30680,15 +30655,6 @@ prebuilt_etc_xml {
     name: "gnss-mtk.xml",
     owner: "unihertz",
     src: "proprietary/vendor/etc/vintf/manifest/gnss-mtk.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "lights-mtk-default.xml",
-    owner: "unihertz",
-    src: "proprietary/vendor/etc/vintf/manifest/lights-mtk-default.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -32141,39 +32107,6 @@ cc_prebuilt_binary {
                 "liblog",
                 "libutils",
                 "android.hardware.graphics.composer3-V4-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.lights-service.mediatek",
-    owner: "unihertz",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.lights-service.mediatek",
-            ],
-            shared_libs: [
-                "libbase",
-                "libutils",
-                "liblog",
-                "libbinder_ndk",
-                "android.hardware.light-V2-ndk",
-                "vendor.mediatek.hardware.mtklight-V1-ndk",
-                "libhardware",
-                "libhardware_legacy",
                 "libc++",
                 "libc",
                 "libm",

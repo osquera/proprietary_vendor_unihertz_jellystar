@@ -276,7 +276,6 @@ PRODUCT_COPY_FILES += \
     vendor/unihertz/jellystar/proprietary/vendor/etc/init/init.wod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wod.rc \
     vendor/unihertz/jellystar/proprietary/vendor/etc/init/init.xcap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.xcap.rc \
     vendor/unihertz/jellystar/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
-    vendor/unihertz/jellystar/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
     vendor/unihertz/jellystar/proprietary/vendor/etc/init/loghidlvendorservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loghidlvendorservice.rc \
     vendor/unihertz/jellystar/proprietary/vendor/etc/init/md_monitor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/md_monitor.rc \
     vendor/unihertz/jellystar/proprietary/vendor/etc/init/memtrack-mediatek-stock.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek-stock.rc \
@@ -1413,7 +1412,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mbrain-V6-ndk \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
-    vendor.mediatek.hardware.mtklight-V1-ndk \
     vendor.mediatek.hardware.mtkpower-V1-ndk-mtk \
     vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V4-ndk \
@@ -1477,7 +1475,6 @@ PRODUCT_PACKAGES += \
     em_hal_service.xml \
     gnss-default.mediatek.xml \
     gnss-mtk.xml \
-    lights-mtk-default.xml \
     manifest_allocator.xml \
     manifest_cameraprovider.xml \
     manifest_hwcomposer.xml \
@@ -1539,7 +1536,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@3.2-service \
     android.hardware.graphics.composer@3.3-service \
     android.hardware.graphics.composer@3.4-service \
-    android.hardware.lights-service.mediatek \
     android.hardware.media.c2-mediatek \
     android.hardware.media.c2-mediatek-64b \
     android.hardware.memtrack-service.mediatek-stock \
